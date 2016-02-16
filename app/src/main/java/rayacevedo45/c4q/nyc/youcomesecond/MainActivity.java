@@ -1,9 +1,11 @@
 package rayacevedo45.c4q.nyc.youcomesecond;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void toSignup (View v){
+        Intent intent = new Intent(MainActivity.this, Signup.class);
+        startActivity(intent);
     }
 }

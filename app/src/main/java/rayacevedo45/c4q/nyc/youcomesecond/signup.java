@@ -1,11 +1,13 @@
 package rayacevedo45.c4q.nyc.youcomesecond;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class signup extends AppCompatActivity {
+public class Signup extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,5 +35,9 @@ public class signup extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void toSignup2 (View v) {
+        Intent intent = new Intent(Signup.this, Signup2.class);
+        startActivity(intent);
     }
 }
